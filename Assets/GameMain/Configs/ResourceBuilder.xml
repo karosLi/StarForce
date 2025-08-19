@@ -12,7 +12,7 @@
       <OutputDirectory>/Users/karosli/Documents/Study/Unity/UnityProject/StarForce/Build/AB</OutputDirectory>
       <OutputPackageSelected>True</OutputPackageSelected>
       <OutputFullSelected>True</OutputFullSelected>
-      <OutputPackedSelected>True</OutputPackedSelected>
+      <OutputPackedSelected>False</OutputPackedSelected>
     </Settings>
   </ResourceBuilder>
 </UnityGameFramework>
