@@ -32,6 +32,13 @@ namespace StarForce
         {
             base.OnEnter(procedureOwner);
 
+            int hashCode = -1144653049;
+            string result = Utility.Text.Format("{0:x8}", hashCode);
+            // hash bbc5fb07
+            // 所以GF的原生版本清单GameFrameworkVersion.bbc5fb07.dat文件(CDN：http://localhost/FTP/0_1_0_2/MacOS/GameFrameworkVersion.bbc5fb07.dat）
+            // 的bbc5fb07 hash值是是取的 GameFrameworkVersion.dat 的原始文件的hash值
+            Debug.Log("Hash " + result);
+
             m_CheckVersionComplete = false;
             m_NeedUpdateVersion = false;
             m_VersionInfo = null;
@@ -134,6 +141,7 @@ namespace StarForce
 
             m_CheckVersionComplete = true;
             m_NeedUpdateVersion = GameEntry.Resource.CheckVersionList(m_VersionInfo.InternalResourceVersion) == CheckVersionListResult.NeedUpdate;
+            Debug.Log($"LocalResourceVersion:{Version.InternalGameVersion} RemoteResourceVersion:{m_VersionInfo.InternalResourceVersion} NeedUpdateVersion:{m_NeedUpdateVersion}");
         }
 
         private void OnWebRequestFailure(object sender, GameEventArgs e)
