@@ -186,18 +186,52 @@ namespace UnityGameFramework.Editor.ResourceTools
             try
             {
                 var bytes = File.ReadAllBytes(path);
-                ReadOnlyVersionListSerializer serializer = new ReadOnlyVersionListSerializer();
-                AddGameFrameworkListEvent(serializer);
-                var memoryStream = new MemoryStream(bytes, false);
-                LocalVersionList versionList = serializer.Deserialize(memoryStream);
+                LocalVersionList versionList = default(LocalVersionList);
+                bool useReadWriteSerializer = false;
                 
-                if (!versionList.IsValid)
+                // 优先使用 ReadOnlyVersionListSerializer
+                try
                 {
-                    Debug.LogError("GameFrameworkList 反序列化失败！");
-                    return;
+                    ReadOnlyVersionListSerializer serializer = new ReadOnlyVersionListSerializer();
+                    AddGameFrameworkListEvent(serializer);
+                    var memoryStream = new MemoryStream(bytes, false);
+                    versionList = serializer.Deserialize(memoryStream);
+                    
+                    if (!versionList.IsValid)
+                    {
+                        throw new Exception("ReadOnlyVersionListSerializer 解析失败");
+                    }
+                    
+                    Debug.Log("使用 ReadOnlyVersionListSerializer 解析成功");
+                }
+                catch (System.Exception ex)
+                {
+                    Debug.LogWarning($"ReadOnlyVersionListSerializer 解析失败: {ex.Message}，尝试使用 ReadWriteVersionListSerializer");
+                    
+                    // 备选方案：使用 ReadWriteVersionListSerializer
+                    try
+                    {
+                        ReadWriteVersionListSerializer rwSerializer = new ReadWriteVersionListSerializer();
+                        AddGameFrameworkListEventForReadWrite(rwSerializer);
+                        var memoryStream = new MemoryStream(bytes, false);
+                        versionList = rwSerializer.Deserialize(memoryStream);
+                        
+                        if (!versionList.IsValid)
+                        {
+                            throw new Exception("ReadWriteVersionListSerializer 解析也失败");
+                        }
+                        
+                        useReadWriteSerializer = true;
+                        Debug.Log("使用 ReadWriteVersionListSerializer 解析成功");
+                    }
+                    catch (System.Exception rwEx)
+                    {
+                        Debug.LogError($"两种序列化器都解析失败: ReadOnly: {ex.Message}, ReadWrite: {rwEx.Message}");
+                        return;
+                    }
                 }
 
-                Debug.Log($"GameFrameworkList 反序列化成功，资源数量: {versionList.GetResources().Length}, 文件系统数量: {versionList.GetFileSystems().Length}");
+                Debug.Log($"GameFrameworkList 反序列化成功{(useReadWriteSerializer ? "（使用ReadWriteVersionListSerializer）" : "（使用ReadOnlyVersionListSerializer）")}，资源数量: {versionList.GetResources().Length}, 文件系统数量: {versionList.GetFileSystems().Length}");
 
                 string directory = Path.GetDirectoryName(path);
                 var data = new GFWList(versionList);
@@ -315,6 +349,19 @@ namespace UnityGameFramework.Editor.ResourceTools
             s.RegisterDeserializeCallback(0, BuiltinVersionListSerializer.LocalVersionListDeserializeCallback_V0);
             s.RegisterDeserializeCallback(1, BuiltinVersionListSerializer.LocalVersionListDeserializeCallback_V1);
             s.RegisterDeserializeCallback(2, BuiltinVersionListSerializer.LocalVersionListDeserializeCallback_V2);
+            // 移除V3回调，如果不存在的话
+        }
+
+        private static void AddGameFrameworkListEventForReadWrite(ReadWriteVersionListSerializer s)
+        {
+            s.RegisterDeserializeCallback(0, BuiltinVersionListSerializer.LocalVersionListDeserializeCallback_V0);
+            s.RegisterDeserializeCallback(1, BuiltinVersionListSerializer.LocalVersionListDeserializeCallback_V1);
+            s.RegisterDeserializeCallback(2, BuiltinVersionListSerializer.LocalVersionListDeserializeCallback_V2);
+            // 移除V3回调，如果不存在的话
+            
+            s.RegisterSerializeCallback(0, BuiltinVersionListSerializer.LocalVersionListSerializeCallback_V0);
+            s.RegisterSerializeCallback(1, BuiltinVersionListSerializer.LocalVersionListSerializeCallback_V1);
+            s.RegisterSerializeCallback(2, BuiltinVersionListSerializer.LocalVersionListSerializeCallback_V2);
             // 移除V3回调，如果不存在的话
         }
 
