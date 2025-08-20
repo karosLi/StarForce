@@ -9,6 +9,7 @@ using UnityGameFramework.Runtime;
 
 namespace UnityGameFramework.Editor.ResourceTools
 {
+    [System.Serializable]
     public class GFWVersionList
     {
         public GFWVersionAsset[] Assets;
@@ -50,56 +51,61 @@ namespace UnityGameFramework.Editor.ResourceTools
         }
     }
 
+    [System.Serializable]
     public class GFWVersionAsset
     {
-        public string m_Name;
+        public string Name;
 
         public GFWVersionAsset(UpdatableVersionList.Asset a)
         {
-            m_Name = a.Name;
+            Name = a.Name;
         }
     }
 
+    [System.Serializable]
     public class GFWVersionResource
     {
-        public string m_Name;
-        public byte m_LoadType;
-        public int m_Length;
-        public int m_HashCode;
+        public string Name;
+        public byte LoadType;
+        public int Length;
+        public int HashCode;
 
         public GFWVersionResource(UpdatableVersionList.Resource a)
         {
-            m_Name = a.Name;
-            m_LoadType = a.LoadType;
-            m_Length = a.Length;
-            m_HashCode = a.HashCode;
+            Name = a.Name;
+            LoadType = a.LoadType;
+            Length = a.Length;
+            HashCode = a.HashCode;
         }
     }
 
+    [System.Serializable]
     public class GFWVersionFileSystem
     {
-        public string m_Name;
-        public int[] m_ResourceIndexes;
+        public string Name;
+        public int[] ResourceIndexes;
 
         public GFWVersionFileSystem(UpdatableVersionList.FileSystem a)
         {
-            m_Name = a.Name;
-            m_ResourceIndexes = a.GetResourceIndexes();
+            Name = a.Name;
+            ResourceIndexes = a.GetResourceIndexes();
         }
     }
 
+    [System.Serializable]
     public class GFWVersionResourceGroup
     {
-        public string m_Name;
-        public int[] m_ResourceIndexes;
+        public string Name;
+        public int[] ResourceIndexes;
 
         public GFWVersionResourceGroup(UpdatableVersionList.ResourceGroup a)
         {
-            m_Name = a.Name;
-            m_ResourceIndexes = a.GetResourceIndexes();
+            Name = a.Name;
+            ResourceIndexes = a.GetResourceIndexes();
         }
     }
     
+    [System.Serializable]
     public class GFWList
     {
         public GFWListResource[] Resources;
@@ -123,31 +129,33 @@ namespace UnityGameFramework.Editor.ResourceTools
         }
     }
     
+    [System.Serializable]
     public class GFWListResource
     {
-        public string m_Name;
-        public byte m_LoadType;
-        public int m_Length;
-        public int m_HashCode;
+        public string Name;
+        public byte LoadType;
+        public int Length;
+        public int HashCode;
 
         public GFWListResource(LocalVersionList.Resource rs)
         {
-            m_Name = rs.Name;
-            m_LoadType = rs.LoadType;
-            m_Length = rs.Length;
-            m_HashCode = rs.HashCode;
+            Name = rs.Name;
+            LoadType = rs.LoadType;
+            Length = rs.Length;
+            HashCode = rs.HashCode;
         }
     }
     
+    [System.Serializable]
     public class GFWListFilesystem
     {
-        public string m_Name;
-        public int[] m_ResourceIndexes;
+        public string Name;
+        public int[] ResourceIndexes;
         
         public GFWListFilesystem(LocalVersionList.FileSystem fs)
         {
-            m_Name = fs.Name;
-            m_ResourceIndexes = fs.GetResourceIndexes();
+            Name = fs.Name;
+            ResourceIndexes = fs.GetResourceIndexes();
         }
     }
 
@@ -178,12 +186,25 @@ namespace UnityGameFramework.Editor.ResourceTools
                     return;
                 }
 
+                Debug.Log($"GameFrameworkList 反序列化成功，资源数量: {versionList.GetResources().Length}, 文件系统数量: {versionList.GetFileSystems().Length}");
+
                 string directory = Path.GetDirectoryName(path);
                 var data = new GFWList(versionList);
+                
+                Debug.Log($"转换后数据 - 资源数量: {data.Resources?.Length ?? 0}, 文件系统数量: {data.Filesystems?.Length ?? 0}");
+                
                 string json = JsonUtility.ToJson(data, true);
+                
+                if (string.IsNullOrEmpty(json) || json == "{}")
+                {
+                    Debug.LogError("JSON序列化结果为空！可能是数据结构问题。");
+                    return;
+                }
+                
                 File.WriteAllText(Path.Combine(directory, select.name + ".json"), json);
 
                 Debug.Log($"GameFrameworkList解析完成，输出文件: {Path.Combine(directory, select.name + ".json")}");
+                Debug.Log($"JSON内容预览: {json.Substring(0, Math.Min(200, json.Length))}...");
                 AssetDatabase.Refresh();
             }
             catch (System.Exception e)
@@ -251,12 +272,25 @@ namespace UnityGameFramework.Editor.ResourceTools
                     return;
                 }
 
+                Debug.Log($"GameFrameworkVersion 反序列化成功，资产数量: {versionList.GetAssets().Length}, 资源数量: {versionList.GetResources().Length}, 文件系统数量: {versionList.GetFileSystems().Length}, 资源组数量: {versionList.GetResourceGroups().Length}");
+
                 string directory = Path.GetDirectoryName(path);
                 var data = new GFWVersionList(versionList);
+                
+                Debug.Log($"转换后数据 - 资产数量: {data.Assets?.Length ?? 0}, 资源数量: {data.Resources?.Length ?? 0}, 文件系统数量: {data.FileSystems?.Length ?? 0}, 资源组数量: {data.ResourceGroups?.Length ?? 0}");
+                
                 string json = JsonUtility.ToJson(data, true);
+                
+                if (string.IsNullOrEmpty(json) || json == "{}")
+                {
+                    Debug.LogError("JSON序列化结果为空！可能是数据结构问题。");
+                    return;
+                }
+                
                 File.WriteAllText(Path.Combine(directory, select.name + ".json"), json);
 
                 Debug.Log($"GameFrameworkVersion解析完成{(isCompressed ? "（已解压缩）" : "")}，输出文件: {Path.Combine(directory, select.name + ".json")}");
+                Debug.Log($"JSON内容预览: {json.Substring(0, Math.Min(200, json.Length))}...");
                 AssetDatabase.Refresh();
             }
             catch (System.Exception e)
