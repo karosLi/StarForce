@@ -66,13 +66,19 @@ namespace UnityGameFramework.Editor.ResourceTools
     public class GFWVersionResource
     {
         public string Name;
+        public string Extension;
+
+        public string Variant;
         public byte LoadType;
         public int Length;
         public int HashCode;
 
+
         public GFWVersionResource(UpdatableVersionList.Resource a)
         {
             Name = a.Name;
+            Extension = a.Extension;
+            Variant = a.Variant;
             LoadType = a.LoadType;
             Length = a.Length;
             HashCode = a.HashCode;
@@ -133,6 +139,9 @@ namespace UnityGameFramework.Editor.ResourceTools
     public class GFWListResource
     {
         public string Name;
+        public string Extension;
+
+        public string Variant;
         public byte LoadType;
         public int Length;
         public int HashCode;
@@ -140,6 +149,8 @@ namespace UnityGameFramework.Editor.ResourceTools
         public GFWListResource(LocalVersionList.Resource rs)
         {
             Name = rs.Name;
+            Extension = rs.Extension;
+            Variant = rs.Variant;
             LoadType = rs.LoadType;
             Length = rs.Length;
             HashCode = rs.HashCode;
