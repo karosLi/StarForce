@@ -1,0 +1,173 @@
+{
+    "Resources": [
+        {
+            "Name": "Configs",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 1396,
+            "HashCode": -2196505
+        },
+        {
+            "Name": "DataTables",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 4367,
+            "HashCode": -301901072
+        },
+        {
+            "Name": "Entities",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 40948,
+            "HashCode": 1333626492
+        },
+        {
+            "Name": "Fonts",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 4628819,
+            "HashCode": 985903540
+        },
+        {
+            "Name": "Localization/Dictionaries",
+            "Extension": "dat",
+            "Variant": "en-us",
+            "LoadType": 0,
+            "Length": 2181,
+            "HashCode": 175495303
+        },
+        {
+            "Name": "Localization/Dictionaries",
+            "Extension": "dat",
+            "Variant": "ko-kr",
+            "LoadType": 0,
+            "Length": 2246,
+            "HashCode": 573877849
+        },
+        {
+            "Name": "Localization/Dictionaries",
+            "Extension": "dat",
+            "Variant": "zh-cn",
+            "LoadType": 0,
+            "Length": 2131,
+            "HashCode": 137277544
+        },
+        {
+            "Name": "Localization/Dictionaries",
+            "Extension": "dat",
+            "Variant": "zh-tw",
+            "LoadType": 0,
+            "Length": 2132,
+            "HashCode": 1059683807
+        },
+        {
+            "Name": "Materials",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 81614,
+            "HashCode": 1681296900
+        },
+        {
+            "Name": "Meshes",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 320802,
+            "HashCode": -1554393822
+        },
+        {
+            "Name": "Music/About",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 3368351,
+            "HashCode": 1328529194
+        },
+        {
+            "Name": "Music/Background",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 127404,
+            "HashCode": 531049656
+        },
+        {
+            "Name": "Music/Menu",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 997925,
+            "HashCode": -1992960925
+        },
+        {
+            "Name": "Scenes",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 71800,
+            "HashCode": -459874921
+        },
+        {
+            "Name": "Sounds",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 46303,
+            "HashCode": -1344007854
+        },
+        {
+            "Name": "Textures",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 2481863,
+            "HashCode": 2006507504
+        },
+        {
+            "Name": "UI/UIForms",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 23601,
+            "HashCode": -1611802183
+        },
+        {
+            "Name": "UI/UISounds",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 3714,
+            "HashCode": 1249115659
+        },
+        {
+            "Name": "UI/UISprites/Common",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 140824,
+            "HashCode": -130726385
+        },
+        {
+            "Name": "UI/UISprites/Icons",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 7935,
+            "HashCode": -1809619304
+        },
+        {
+            "Name": "UI/UISprites/Logos",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 16519,
+            "HashCode": -843436972
+        }
+    ],
+    "Filesystems": []
+}

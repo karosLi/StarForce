@@ -1,0 +1,581 @@
+{
+    "Assets": [
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Common/info.png"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UIForms/DialogForm.prefab"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/part_shockwave_dff.tif"
+        },
+        {
+            "Name": "Assets/GameMain/Music/music_about.mp3"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/part_jet_core_dff.tif"
+        },
+        {
+            "Name": "Assets/GameMain/Entities/DefaultArmor.prefab"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UIForms/MenuForm.prefab"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Common/dialog-title-background.png"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/part_glow_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/part_spark_white_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/Localization/ChineseTraditional/Dictionaries/Default.xml"
+        },
+        {
+            "Name": "Assets/GameMain/Entities/EnemyBolt.prefab"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/part_spark_small_dff.tif"
+        },
+        {
+            "Name": "Assets/GameMain/Localization/English/Dictionaries/Default.xml"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Common/progressbar-background.png"
+        },
+        {
+            "Name": "Assets/GameMain/Entities/EnemyExplosion.prefab"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/part_star_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/fx_enemyShip_engines_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/Sounds/weapon_enemy.wav"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/part_star_dff.tif"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/part_blast_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/part_shockwave_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/vehicle_enemyShip_glow_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Common/progress-conner.png"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/Armor.bytes"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Common/circle.png"
+        },
+        {
+            "Name": "Assets/GameMain/Meshes/prop_asteroid_03.FBX"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/part_jet_flare_dff.tif"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/Music.txt"
+        },
+        {
+            "Name": "Assets/GameMain/Entities/PlayerExplosion.prefab"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/UIForm.txt"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/Sound.txt"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UIForms/AboutForm.prefab"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Common/circle-outline.png"
+        },
+        {
+            "Name": "Assets/GameMain/Sounds/explosion_asteroid.wav"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/part_flash_dff.tif"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Common/checked.png"
+        },
+        {
+            "Name": "Assets/GameMain/Scenes/Main.unity"
+        },
+        {
+            "Name": "Assets/GameMain/Configs/DefaultConfig.txt"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/Aircraft.bytes"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/prop_asteroid_03_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/Thruster.bytes"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/vehicle_playerShip_orange_dff.tif"
+        },
+        {
+            "Name": "Assets/GameMain/Meshes/vehicle_playerShip_collider.FBX"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Common/circle-filled.png"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/prop_asteroid_02_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/prop_asteroid_01_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/Localization/Korean/Dictionaries/Default.xml"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Common/round-button-outline.png"
+        },
+        {
+            "Name": "Assets/GameMain/Music/music_background.mp3"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/done_fx_bolt_cyan_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/Aircraft.txt"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Common/line.png"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/prop_asteroid_02_nrm.tif"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/vehicle_playerShip_orange_nrm.tif"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/vehicle_enemyShip_nrm.tif"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/fx_lazer_cyan_dff.tif"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/vehicle_enemyShip_purple_dff.tif"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/tile_nebula_green_dff.tif"
+        },
+        {
+            "Name": "Assets/GameMain/Sounds/explosion_enemy.wav"
+        },
+        {
+            "Name": "Assets/GameMain/Entities/PlayerShip.prefab"
+        },
+        {
+            "Name": "Assets/GameMain/Fonts/MainFont.ttf"
+        },
+        {
+            "Name": "Assets/GameMain/Entities/Asteroid01.prefab"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/part_spark_large_dff.tif"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/prop_asteroid_03_nrm.tif"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Logos/unity-logo.png"
+        },
+        {
+            "Name": "Assets/GameMain/Configs/DefaultConfig.bytes"
+        },
+        {
+            "Name": "Assets/GameMain/Entities/Asteroid03.prefab"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/prop_asteroid_03_dff.tif"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/vehicle_playerShip_metal_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/Weapon.bytes"
+        },
+        {
+            "Name": "Assets/GameMain/Entities/PlayerEngine.prefab"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/UISound.bytes"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/done_fx_bolt_orange_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/Entities/Asteroid02.prefab"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/done_tile_nebula_green_dff.mat"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/part_spark_large_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/Entity.bytes"
+        },
+        {
+            "Name": "Assets/GameMain/Meshes/prop_asteroid_02.FBX"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/Music.bytes"
+        },
+        {
+            "Name": "Assets/GameMain/Localization/ChineseSimplified/Dictionaries/Default.xml"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/Thruster.txt"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/Sound.bytes"
+        },
+        {
+            "Name": "Assets/GameMain/Meshes/vehicle_enemyShip.FBX"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Common/button-filled.png"
+        },
+        {
+            "Name": "Assets/GameMain/Sounds/explosion_player.wav"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/part_spark_yellow_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/UIForm.bytes"
+        },
+        {
+            "Name": "Assets/GameMain/Entities/AsteroidExplosion.prefab"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/Scene.txt"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/part_jet_flare_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Common/button-outline.png"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Common/dialog-background.png"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/Weapon.txt"
+        },
+        {
+            "Name": "Assets/GameMain/Entities/DefaultWeapon.prefab"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/Asteroid.txt"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/prop_asteroid_01_dff.tif"
+        },
+        {
+            "Name": "Assets/GameMain/Entities/EnemyShip.prefab"
+        },
+        {
+            "Name": "Assets/GameMain/Scenes/Menu.unity"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/part_spark_blue_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/Armor.txt"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/prop_asteroid_02_dff.tif"
+        },
+        {
+            "Name": "Assets/GameMain/Meshes/prop_asteroid_01.FBX"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UIForms/SettingForm.prefab"
+        },
+        {
+            "Name": "Assets/GameMain/Sounds/weapon_player.wav"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/vehicle_enemyShip_metal_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/part_jet_core_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISounds/click.wav"
+        },
+        {
+            "Name": "Assets/GameMain/Music/music_menu.mp3"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Common/background.png"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/Entity.txt"
+        },
+        {
+            "Name": "Assets/GameMain/Meshes/vehicle_playerShip.FBX"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Icons/world.png"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/Asteroid.bytes"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Icons/sound.png"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Common/progressbar.png"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISounds/select.wav"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Common/round-button-filled.png"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/part_enginePulse_dff.tif"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Common/box.png"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/UISound.txt"
+        },
+        {
+            "Name": "Assets/GameMain/Materials/vehicle_playerShip_glass_mat.mat"
+        },
+        {
+            "Name": "Assets/GameMain/UI/UISprites/Icons/music.png"
+        },
+        {
+            "Name": "Assets/GameMain/Entities/PlayerBolt.prefab"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/prop_asteroid_01_nrm.tif"
+        },
+        {
+            "Name": "Assets/GameMain/Textures/fx_lazer_orange_dff.tif"
+        },
+        {
+            "Name": "Assets/GameMain/DataTables/Scene.bytes"
+        },
+        {
+            "Name": "Assets/GameMain/Entities/EnemyEngine.prefab"
+        }
+    ],
+    "Resources": [
+        {
+            "Name": "Configs",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 1396,
+            "HashCode": -2196505
+        },
+        {
+            "Name": "DataTables",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 4367,
+            "HashCode": -301901072
+        },
+        {
+            "Name": "Entities",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 40948,
+            "HashCode": 1333626492
+        },
+        {
+            "Name": "Fonts",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 4628819,
+            "HashCode": 985903540
+        },
+        {
+            "Name": "Localization/Dictionaries",
+            "Extension": "dat",
+            "Variant": "en-us",
+            "LoadType": 0,
+            "Length": 2181,
+            "HashCode": 175495303
+        },
+        {
+            "Name": "Localization/Dictionaries",
+            "Extension": "dat",
+            "Variant": "ko-kr",
+            "LoadType": 0,
+            "Length": 2246,
+            "HashCode": 573877849
+        },
+        {
+            "Name": "Localization/Dictionaries",
+            "Extension": "dat",
+            "Variant": "zh-cn",
+            "LoadType": 0,
+            "Length": 2131,
+            "HashCode": 137277544
+        },
+        {
+            "Name": "Localization/Dictionaries",
+            "Extension": "dat",
+            "Variant": "zh-tw",
+            "LoadType": 0,
+            "Length": 2132,
+            "HashCode": 1059683807
+        },
+        {
+            "Name": "Materials",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 81614,
+            "HashCode": 1681296900
+        },
+        {
+            "Name": "Meshes",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 320802,
+            "HashCode": -1554393822
+        },
+        {
+            "Name": "Music/About",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 3368351,
+            "HashCode": 1328529194
+        },
+        {
+            "Name": "Music/Background",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 127404,
+            "HashCode": 531049656
+        },
+        {
+            "Name": "Music/Menu",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 997925,
+            "HashCode": -1992960925
+        },
+        {
+            "Name": "Scenes",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 71800,
+            "HashCode": -459874921
+        },
+        {
+            "Name": "Sounds",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 46303,
+            "HashCode": -1344007854
+        },
+        {
+            "Name": "Textures",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 2481863,
+            "HashCode": 2006507504
+        },
+        {
+            "Name": "UI/UIForms",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 23601,
+            "HashCode": -1611802183
+        },
+        {
+            "Name": "UI/UISounds",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 3714,
+            "HashCode": 1249115659
+        },
+        {
+            "Name": "UI/UISprites/Common",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 140824,
+            "HashCode": -130726385
+        },
+        {
+            "Name": "UI/UISprites/Icons",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 7935,
+            "HashCode": -1809619304
+        },
+        {
+            "Name": "UI/UISprites/Logos",
+            "Extension": "dat",
+            "Variant": "",
+            "LoadType": 0,
+            "Length": 16519,
+            "HashCode": -843436972
+        }
+    ],
+    "FileSystems": [],
+    "ResourceGroups": [
+        {
+            "Name": "Base",
+            "ResourceIndexes": [
+                0,
+                1,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        },
+        {
+            "Name": "Music",
+            "ResourceIndexes": [
+                10,
+                11,
+                12
+            ]
+        }
+    ]
+}
