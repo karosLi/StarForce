@@ -1,4 +1,6 @@
 {
+    "ApplicableGameVersion": "0.1.0",
+    "InternalResourceVersion": 2,
     "Assets": [
         {
             "Name": "Assets/GameMain/UI/UISprites/Common/info.png"
