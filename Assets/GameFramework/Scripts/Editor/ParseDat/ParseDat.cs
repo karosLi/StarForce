@@ -12,6 +12,8 @@ namespace UnityGameFramework.Editor.ResourceTools
     [System.Serializable]
     public class GFWVersionList
     {
+        public string ApplicableGameVersion;
+        public int InternalResourceVersion;
         public GFWVersionAsset[] Assets;
         public GFWVersionResource[] Resources;
         public GFWVersionFileSystem[] FileSystems;
@@ -19,6 +21,9 @@ namespace UnityGameFramework.Editor.ResourceTools
 
         public GFWVersionList(UpdatableVersionList list)
         {
+            ApplicableGameVersion = list.ApplicableGameVersion;
+            InternalResourceVersion = list.InternalResourceVersion;
+            
             var assets = list.GetAssets();
             var resources = list.GetResources();
             
