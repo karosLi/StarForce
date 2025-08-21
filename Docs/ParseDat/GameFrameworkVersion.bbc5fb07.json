@@ -394,7 +394,13 @@
             "Variant": "",
             "LoadType": 0,
             "Length": 1396,
-            "HashCode": -2196505
+            "HashCode": -2196505,
+            "CompressedLength": 1152,
+            "CompressedHashCode": -691678067,
+            "AssetIndexes": [
+                38,
+                66
+            ]
         },
         {
             "Name": "DataTables",
@@ -402,7 +408,33 @@
             "Variant": "",
             "LoadType": 0,
             "Length": 4367,
-            "HashCode": -301901072
+            "HashCode": -301901072,
+            "CompressedLength": 3696,
+            "CompressedHashCode": -1929974876,
+            "AssetIndexes": [
+                24,
+                28,
+                30,
+                31,
+                39,
+                41,
+                51,
+                70,
+                72,
+                77,
+                79,
+                81,
+                82,
+                87,
+                89,
+                93,
+                95,
+                100,
+                110,
+                113,
+                120,
+                126
+            ]
         },
         {
             "Name": "Entities",
@@ -410,7 +442,25 @@
             "Variant": "",
             "LoadType": 0,
             "Length": 40948,
-            "HashCode": 1333626492
+            "HashCode": 1333626492,
+            "CompressedLength": 23469,
+            "CompressedHashCode": 143929304,
+            "AssetIndexes": [
+                5,
+                11,
+                15,
+                29,
+                60,
+                62,
+                67,
+                71,
+                74,
+                88,
+                94,
+                97,
+                123,
+                127
+            ]
         },
         {
             "Name": "Fonts",
@@ -418,7 +468,12 @@
             "Variant": "",
             "LoadType": 0,
             "Length": 4628819,
-            "HashCode": 985903540
+            "HashCode": 985903540,
+            "CompressedLength": 4052691,
+            "CompressedHashCode": -1756031275,
+            "AssetIndexes": [
+                61
+            ]
         },
         {
             "Name": "Localization/Dictionaries",
@@ -426,7 +481,12 @@
             "Variant": "en-us",
             "LoadType": 0,
             "Length": 2181,
-            "HashCode": 175495303
+            "HashCode": 175495303,
+            "CompressedLength": 1814,
+            "CompressedHashCode": 436025957,
+            "AssetIndexes": [
+                13
+            ]
         },
         {
             "Name": "Localization/Dictionaries",
@@ -434,7 +494,12 @@
             "Variant": "ko-kr",
             "LoadType": 0,
             "Length": 2246,
-            "HashCode": 573877849
+            "HashCode": 573877849,
+            "CompressedLength": 1939,
+            "CompressedHashCode": 919723331,
+            "AssetIndexes": [
+                47
+            ]
         },
         {
             "Name": "Localization/Dictionaries",
@@ -442,7 +507,12 @@
             "Variant": "zh-cn",
             "LoadType": 0,
             "Length": 2131,
-            "HashCode": 137277544
+            "HashCode": 137277544,
+            "CompressedLength": 1853,
+            "CompressedHashCode": 1090404993,
+            "AssetIndexes": [
+                80
+            ]
         },
         {
             "Name": "Localization/Dictionaries",
@@ -450,7 +520,12 @@
             "Variant": "zh-tw",
             "LoadType": 0,
             "Length": 2132,
-            "HashCode": 1059683807
+            "HashCode": 1059683807,
+            "CompressedLength": 1857,
+            "CompressedHashCode": -781860771,
+            "AssetIndexes": [
+                10
+            ]
         },
         {
             "Name": "Materials",
@@ -458,7 +533,32 @@
             "Variant": "",
             "LoadType": 0,
             "Length": 81614,
-            "HashCode": 1681296900
+            "HashCode": 1681296900,
+            "CompressedLength": 64891,
+            "CompressedHashCode": -228017660,
+            "AssetIndexes": [
+                8,
+                9,
+                16,
+                17,
+                20,
+                21,
+                22,
+                40,
+                45,
+                46,
+                50,
+                69,
+                73,
+                75,
+                76,
+                86,
+                90,
+                99,
+                105,
+                106,
+                121
+            ]
         },
         {
             "Name": "Meshes",
@@ -466,7 +566,17 @@
             "Variant": "",
             "LoadType": 0,
             "Length": 320802,
-            "HashCode": -1554393822
+            "HashCode": -1554393822,
+            "CompressedLength": 278543,
+            "CompressedHashCode": 1106453468,
+            "AssetIndexes": [
+                26,
+                43,
+                78,
+                83,
+                102,
+                111
+            ]
         },
         {
             "Name": "Music/About",
@@ -474,7 +584,12 @@
             "Variant": "",
             "LoadType": 0,
             "Length": 3368351,
-            "HashCode": 1328529194
+            "HashCode": 1328529194,
+            "CompressedLength": 3357176,
+            "CompressedHashCode": -107393336,
+            "AssetIndexes": [
+                3
+            ]
         },
         {
             "Name": "Music/Background",
@@ -482,7 +597,12 @@
             "Variant": "",
             "LoadType": 0,
             "Length": 127404,
-            "HashCode": 531049656
+            "HashCode": 531049656,
+            "CompressedLength": 126754,
+            "CompressedHashCode": -822378665,
+            "AssetIndexes": [
+                49
+            ]
         },
         {
             "Name": "Music/Menu",
@@ -490,7 +610,12 @@
             "Variant": "",
             "LoadType": 0,
             "Length": 997925,
-            "HashCode": -1992960925
+            "HashCode": -1992960925,
+            "CompressedLength": 996208,
+            "CompressedHashCode": 391500445,
+            "AssetIndexes": [
+                108
+            ]
         },
         {
             "Name": "Scenes",
@@ -498,7 +623,13 @@
             "Variant": "",
             "LoadType": 0,
             "Length": 71800,
-            "HashCode": -459874921
+            "HashCode": -459874921,
+            "CompressedLength": 38870,
+            "CompressedHashCode": 2069480851,
+            "AssetIndexes": [
+                37,
+                98
+            ]
         },
         {
             "Name": "Sounds",
@@ -506,7 +637,16 @@
             "Variant": "",
             "LoadType": 0,
             "Length": 46303,
-            "HashCode": -1344007854
+            "HashCode": -1344007854,
+            "CompressedLength": 45975,
+            "CompressedHashCode": -685765895,
+            "AssetIndexes": [
+                18,
+                34,
+                59,
+                85,
+                104
+            ]
         },
         {
             "Name": "Textures",
@@ -514,7 +654,32 @@
             "Variant": "",
             "LoadType": 0,
             "Length": 2481863,
-            "HashCode": 2006507504
+            "HashCode": 2006507504,
+            "CompressedLength": 2337186,
+            "CompressedHashCode": 683147150,
+            "AssetIndexes": [
+                2,
+                4,
+                12,
+                19,
+                27,
+                35,
+                42,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                63,
+                64,
+                68,
+                96,
+                101,
+                118,
+                124,
+                125
+            ]
         },
         {
             "Name": "UI/UIForms",
@@ -522,7 +687,15 @@
             "Variant": "",
             "LoadType": 0,
             "Length": 23601,
-            "HashCode": -1611802183
+            "HashCode": -1611802183,
+            "CompressedLength": 20712,
+            "CompressedHashCode": 1452472092,
+            "AssetIndexes": [
+                1,
+                6,
+                32,
+                103
+            ]
         },
         {
             "Name": "UI/UISounds",
@@ -530,7 +703,13 @@
             "Variant": "",
             "LoadType": 0,
             "Length": 3714,
-            "HashCode": 1249115659
+            "HashCode": 1249115659,
+            "CompressedLength": 3371,
+            "CompressedHashCode": 703381917,
+            "AssetIndexes": [
+                107,
+                116
+            ]
         },
         {
             "Name": "UI/UISprites/Common",
@@ -538,7 +717,28 @@
             "Variant": "",
             "LoadType": 0,
             "Length": 140824,
-            "HashCode": -130726385
+            "HashCode": -130726385,
+            "CompressedLength": 86432,
+            "CompressedHashCode": -529972822,
+            "AssetIndexes": [
+                0,
+                7,
+                14,
+                23,
+                25,
+                33,
+                36,
+                44,
+                48,
+                52,
+                84,
+                91,
+                92,
+                109,
+                115,
+                117,
+                119
+            ]
         },
         {
             "Name": "UI/UISprites/Icons",
@@ -546,7 +746,14 @@
             "Variant": "",
             "LoadType": 0,
             "Length": 7935,
-            "HashCode": -1809619304
+            "HashCode": -1809619304,
+            "CompressedLength": 6490,
+            "CompressedHashCode": -289778799,
+            "AssetIndexes": [
+                112,
+                114,
+                122
+            ]
         },
         {
             "Name": "UI/UISprites/Logos",
@@ -554,7 +761,12 @@
             "Variant": "",
             "LoadType": 0,
             "Length": 16519,
-            "HashCode": -843436972
+            "HashCode": -843436972,
+            "CompressedLength": 13398,
+            "CompressedHashCode": -1046312403,
+            "AssetIndexes": [
+                65
+            ]
         }
     ],
     "FileSystems": [],

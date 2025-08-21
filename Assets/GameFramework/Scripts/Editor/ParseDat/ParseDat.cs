@@ -23,7 +23,7 @@ namespace UnityGameFramework.Editor.ResourceTools
         {
             ApplicableGameVersion = list.ApplicableGameVersion;
             InternalResourceVersion = list.InternalResourceVersion;
-            
+
             var assets = list.GetAssets();
             var resources = list.GetResources();
             
@@ -78,6 +78,10 @@ namespace UnityGameFramework.Editor.ResourceTools
         public int Length;
         public int HashCode;
 
+        public int CompressedLength;
+        public int CompressedHashCode;
+
+        public int[] AssetIndexes;
 
         public GFWVersionResource(UpdatableVersionList.Resource a)
         {
@@ -87,6 +91,9 @@ namespace UnityGameFramework.Editor.ResourceTools
             LoadType = a.LoadType;
             Length = a.Length;
             HashCode = a.HashCode;
+            CompressedLength = a.CompressedLength;
+            CompressedHashCode = a.CompressedHashCode;
+            AssetIndexes = a.GetAssetIndexes();
         }
     }
 

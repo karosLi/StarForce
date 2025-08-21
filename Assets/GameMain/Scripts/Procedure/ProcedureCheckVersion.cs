@@ -32,8 +32,32 @@ namespace StarForce
         {
             base.OnEnter(procedureOwner);
 
-            int hashCode = -1144653049;
+            /**
+            Process updatable version list for 'MacOS' complete, updatable version list path is 
+            '/Users/karosli/Documents/Study/Unity/UnityProject/StarForce/Build/AB/Full/0_1_0_2/MacOS/
+            GameFrameworkVersion.bbc5fb07.dat', length is '7115', hash code is '-1144653049[0xBBC5FB07]', 
+            compressed length is '2602', compressed hash code is '906011085[0x3600A1CD]'.
+
+            MacOSVersion.txt
+            {
+                "ForceUpdateGame": false,
+                "LatestGameVersion": "0.1.0",
+                "InternalGameVersion": 0,
+                "InternalResourceVersion": 2,
+                "UpdatePrefixUri": "http://localhost/FTP/0_1_0_2/MacOS",
+                "VersionListLength": 7115,
+                "VersionListHashCode": -1144653049,
+                "VersionListCompressedLength": 2602,
+                "VersionListCompressedHashCode": 906011085,
+                "END_OF_JSON": ""
+            }
+
+            906011085 -> Hash 3600a1cd
+            -1144653049 -> Hash bbc5fb07
+            */
+            int hashCode = 906011085;
             string result = Utility.Text.Format("{0:x8}", hashCode);
+            
             // hash bbc5fb07
             // 所以GF的原生版本清单GameFrameworkVersion.bbc5fb07.dat文件(CDN：http://localhost/FTP/0_1_0_2/MacOS/GameFrameworkVersion.bbc5fb07.dat）
             // 的bbc5fb07 hash值是是取的 GameFrameworkVersion.dat 的原始文件的hash值
